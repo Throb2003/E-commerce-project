@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+        </header>
+
+        <section class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                        </td>
+                        <td>Ksh.00</td>
+                        <td class="item-total">Ksh.00</td>
+                        <td>
+                            <button class="remove-btn">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>
+                            <input type="number" value="2" min="1" class="quantity-input">
+                        </td>
+                        <td>Ksh.00</td>
+                        <td class="item-total">Ksh.00</td>
+                        <td>
+                            <button class="remove-btn">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p><strong>Total Price:</strong> <span id="total-price">Ksh.00</span></p>
+            <a href="index.html" target="_blank">
+            <button class="update-cart-btn">Update Cart</button>
+            </a>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </div>
+
+    <script src="Cart.js"></script>
+</body>
+</html>
